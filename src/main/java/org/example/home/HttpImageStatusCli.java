@@ -20,7 +20,7 @@ public class HttpImageStatusCli {
 
             while (true){
                 strCode = br.readLine();
-                if(!strCode.matches("\\d{3}") || strCode.length() > 3){
+                if(!strCode.matches("\\d{3}")){
                     System.out.println("Please enter valid number!");
                 } else {
                     validCode = Integer.parseInt(strCode);
